@@ -3,6 +3,16 @@
 This project focuses on detecting and estimating the pose of bolts and bolts with nuts in real-world images.
 
 <h3>Segmentation of Objects</h3>
+<p>I am using uv to manage the project dependencies , execute below cell to have the dependencies to run the trianer.ipynb</p>
+
+```bash
+   pip install uv 
+   git clone https://github.com/mathanprasannakumar/doozy_task.git 
+   cd doozy_task 
+   uv sync
+   source .venv/bin/activate 
+```
+
 <li>Performed object segmentation using synthetic data generated in Blender
 </li>
 <li>The rendered dataset and rgb images was further augmented and annotated in Roboflow and used to train a YOLOv11 segmentation model</li>
@@ -47,9 +57,10 @@ bash setup.bash
 <p>After the environment is setup navgate to the happypose/load_data/examples/hex_bolt_30/ directory</p>
 
 ```bash
-cd happypose/load_data/
-export $HAPPYPOSE_DATA_DIR=$(pwd)
-cd examples/hex_bolt_30
+cd happypose/
+source .venv/bin/activate 
+export $HAPPYPOSE_DATA_DIR=$(pwd)/load_data
+cd load_data/examples/hex_bolt_30
 ```
 
 <p>I modified the run_inference_on_example file in the happypose repository and created <a href="/pose_estimation/pose_inference.py">pose_inference.py</a>to match our usecase </p>
