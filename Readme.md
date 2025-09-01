@@ -21,8 +21,9 @@ This project focuses on detecting and estimating the pose of bolts and bolts wit
 <li>Trained the Model for 100 epochs and model achieved  
     <b>Segmentation loss : 0.3149 </b>,
     <b>Classification loss: 0.2394</b>,
-    <b>Box loss : 0.2094</b>,
+    <b>Box loss : 0.2094</b>
 </li>
+<img src="segmented_image.png">
 <br>
 <p>Synthetic Data , Annotations and Finetuned model have been uploaded to the gdrive , Access these by visiting the link below,</p>
 <p><a href="https://drive.google.com/file/d/1molFx3tc0kM8Ml556lgfUZnca4NA8Mb1/view?usp=sharing">Rendered_Data</a></p>
