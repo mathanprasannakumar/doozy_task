@@ -6,7 +6,6 @@ This project focuses on detecting and estimating the pose of bolts and bolts wit
 <li>Performed object segmentation using synthetic data generated in Blender
 </li>
 <li>The rendered dataset and rgb images was further augmented and annotated in Roboflow and used to train a YOLOv11 segmentation model</li>
-
 <b>Rendered Image of bolt</b>
 <img src="blender/bolt_rendered.png">
 <li>Trained the Model for 100 epochs and model achieved  
@@ -34,6 +33,7 @@ This project focuses on detecting and estimating the pose of bolts and bolts wit
 
 <p>Below are the steps need to be followed estimate the pose and below is just to show that 6d pose esimation is possible using megapose given the above mentioned input data</p>
 
+<li>Calibration parameters of the camera are taken from the blender simulated camera <a href="/blender/camera_data.json"> and below inference is applied only to the rendered images</li>
 
 ```bash
 git clone https://github.com/mathanprasannakumar/doozy_task.git
