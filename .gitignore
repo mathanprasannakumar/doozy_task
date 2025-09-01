@@ -1,2 +1,5 @@
 *.zip
 Bolt/**
+instance_segmentation/data/** 
+instance_segmentation/models/** 
+pose_estimation/happypose/** 
